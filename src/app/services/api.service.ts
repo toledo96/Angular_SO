@@ -15,10 +15,10 @@ export class ApiService {
 
 	constructor(public _http: HttpClient){
 		// this.url = "http://127.0.0.1:8000/api/v1/"; 
-		this.url = " http://ec2-54-196-143-5.compute-1.amazonaws.com/api/v1/"; 
+		this.url = " http://ec2-35-153-136-205.compute-1.amazonaws.com/api/v1/"; 
 	}
 
-
+//ec2-35-153-136-205.compute-1.amazonaws.com
 	login(user): Observable<any>{
 		
 		//let params = JSON.stringify(user);
