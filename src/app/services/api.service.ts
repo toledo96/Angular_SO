@@ -19,6 +19,7 @@ export class ApiService {
 	}
 
 //ec2-35-153-136-205.compute-1.amazonaws.com
+// nuevos cambios
 	login(user): Observable<any>{
 		
 		//let params = JSON.stringify(user);
