@@ -76,6 +76,9 @@ export class UsersComponent implements OnInit {
   editNow() {
     this.apiService.updateUser(this.item.id, this.user).subscribe(response => {
       console.log(response);
+      ////////////////////////////////////////
+      this._router.navigate(['/home']);
+      //////////////////////////////////////////
       this.ngOnInit();
     })
   }
