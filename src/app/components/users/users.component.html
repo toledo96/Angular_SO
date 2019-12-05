@@ -10,7 +10,7 @@
                 <div>
                         <h1 style="text-align:center;">Administracion de Alumnos</h1>
                 </div>
-                <form #searchForm="ngForm" class="form-inline" (ngSubmit)="buscar()">
+                <!-- <form #searchForm="ngForm" class="form-inline" (ngSubmit)="buscar()">
                     <div class="input-group mb-4">
                             <label for="inputPassword2" class="sr-only">Nombre/Carrera</label>
                             <input type="text" class="form-control" id="inputPassword2" #name="ngModel" [(ngModel)]="busqueda"
@@ -20,7 +20,7 @@
                                 <button class="btn btn-success mb-2" (click) = "agregar()">Agregar Alumno</button>
                                 
                     </div>
-                </form>
+                </form> -->
 
         </div>
         <div class="col-lg-3">
@@ -37,13 +37,15 @@
         <div class="col-lg-6">
             <!-- <h2>Usuarios</h2> -->
             <form #searchForm="ngForm" class="form-inline" (ngSubmit)="buscar()">
-                <!-- <div class="form-group">
+                <!---->
+                <div class="form-group">
                     <label for="inputPassword2" class="sr-only">Nombre / Carrera</label>
                     <input type="text" class="form-control" id="inputPassword2" #name="ngModel" [(ngModel)]="busqueda"
                         [ngModelOptions]="{standalone: true}" class="form-control" required
                         placeholder="Nombre / Carrera">
                 </div> 
-                <button type="submit" class="btn btn-primary mb-2">Buscar</button>--->
+                <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+                <!---->
             </form>
             <div *ngIf="users">
                 <div class="card" *ngFor="let user of users">
